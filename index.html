@@ -15,96 +15,13 @@
         height: 300px;
         width: 300px;
       }
-      html,
-      body {
-        height: 100%;
-      }
-
-      html {
-        display: table;
-        margin: auto;
-      }
-
-      body {
-        display: table-cell;
-        vertical-align: middle;
-      }
     </style>
   </head>
   <body>
-    <center>
-      <img
-        id="image1"
-        src="https://i.pinimg.com/originals/9a/69/31/9a693154417b1d79552f8e1e39822961.gif"
-      /><br />
-    </center>
-    <span>Hai Boleh Kenalan Gak, Nama Kamu Siapa?</span>
-    <input type="text" value="" id="input" placeholder="    Masukan Nama" />
-    <button id="submit">Kirim</button><br /><br /><br />
-    <span id="hasil"></span>
-    <script>
-      var input = document.getElementById("input");
-      var submit = document.getElementById("submit");
-      var hasil = document.getElementById("hasil");
-
-      input.addEventListener("click", function () {
-        input.style.backgroundColor = "aliceblue";
-      });
-      input.addEventListener("mouseenter", function () {
-        input.style.backgroundColor = "aliceblue";
-      });
-      input.addEventListener("mouseleave", function () {
-        input.style.backgroundColor = "gray";
-      });
-
-      submit.onclick = function () {
-        var text = input.value;
-        hasil.innerHTML =
-          "<center>" + "Mau Jadi Pacar Aku Gak? " + text + "</center>";
-      };
-    </script>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Pertama</title>
-    <style>
-      #input {
-        background-color: aliceblue;
-        border: 2px solid black;
-        border-radius: 10px;
-      }
-      #image1 {
-        height: 300px;
-        width: 300px;
-      }
-      html,
-      body {
-        height: 100%;
-      }
-
-      html {
-        display: table;
-        margin: auto;
-      }
-
-      body {
-        display: table-cell;
-        vertical-align: middle;
-      }
-    </style>
-  </head>
-  <body>
-    <center>
-      <img
-        id="image1"
-        src="https://i.pinimg.com/originals/9a/69/31/9a693154417b1d79552f8e1e39822961.gif"
-      /><br />
-    </center>
+    <img
+      id="image1"
+      src="https://i.pinimg.com/originals/9a/69/31/9a693154417b1d79552f8e1e39822961.gif"
+    /><br />
     <span>Hai Boleh Kenalan Gak, Nama Kamu Siapa?</span>
     <input type="text" value="" id="input" placeholder="    Masukan Nama" />
     <button id="submit">Kirim</button><br /><br /><br />
