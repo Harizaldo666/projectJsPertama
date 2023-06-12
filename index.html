@@ -4,48 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Pertama</title>
-    <style>
-      #input {
-        background-color: aliceblue;
-        border: 2px solid black;
-        border-radius: 10px;
+    <title>Profile</title>
+    <style type="text/css">
+      body {
+        text-align: center;
       }
-      #image1 {
-        height: 300px;
-        width: 300px;
+      .header span{
+        border: 2px solid black;
+        padding: 5px;
+        float: center;
+        background-color: hotpink;
+        cursor: pointer;
+      }
+      #iprofile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+      #pentes {
+        color: gray;
+        position: relative;
+        bottom: 20px;
+      }
+      #tcontent {
+        position: relative;
+        bottom: 15px;
+      }
+      #bpixxiee {
+        border-radius: 10px;
+        font-size: larger;
+        background-color: hotpink;
+        cursor: not-allowed;
+      }
+      #ifooter{
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        border: 3px solid hotpink;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <img
-      id="image1"
-      src="https://i.pinimg.com/originals/9a/69/31/9a693154417b1d79552f8e1e39822961.gif"
-    /><br />
-    <span>Hai Boleh Kenalan Gak, Nama Kamu Siapa?</span>
-    <input type="text" value="" id="input" placeholder="    Masukan Nama" />
-    <button id="submit">Kirim</button><br /><br /><br />
-    <span id="hasil"></span>
-    <script>
-      var input = document.getElementById("input");
-      var submit = document.getElementById("submit");
-      var hasil = document.getElementById("hasil");
 
-      input.addEventListener("click", function () {
-        input.style.backgroundColor = "aliceblue";
-      });
-      input.addEventListener("mouseenter", function () {
-        input.style.backgroundColor = "aliceblue";
-      });
-      input.addEventListener("mouseleave", function () {
-        input.style.backgroundColor = "gray";
-      });
+    <div class="header">
+      <b>
+      <span>Profile</span>
+      <span>Project</span>
+      <span>Sosmed</span>
+      <span>Kontak</span>
+      </b>
+    </div>
+    <br />
+    <div class="content">
+    <br />
 
-      submit.onclick = function () {
-        var text = input.value;
-        hasil.innerHTML =
-          "<center>" + "Mau Jadi Pacar Aku Gak? " + text + "</center>";
-      };
-    </script>
+      <img src="image/profil.png" id="iprofile" />
+      <h1>Harizaldo Alfaraze</h1>
+      <h4 id="pentes">CYBER SCURITY</h4>
+      <h4 id="tcontent">Pentester Website <br />Username @Pixxiee11</h4>
+    </div>
+    <button id="bpixxiee">Pixxiee11</button>
+    <hr />
+    <div class="footer">
+        <div class="cfooter">
+          <img src="image/tiktok.jpg" id="ifooter" />
+        </div>
+        <div class="cfooter">
+          <img src="image/instagram.jpg" id="ifooter" />
+        </div>
+        <div class="cfooter">
+          <img src="image/youtube.jpg" id="ifooter" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
